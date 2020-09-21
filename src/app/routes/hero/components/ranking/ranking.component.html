@@ -1,0 +1,20 @@
+<h1>Hero List</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Level</th>
+            <!-- <th>Actions</th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let hero of (heroes$ | async)">
+            <td><b>{{hero.rank}}</b></td>
+            <td>{{hero.name}}</td>
+            <td>{{hero.level}}</td>
+            <!-- <td><button></button></td> -->
+        </tr>
+    </tbody>
+</table>
